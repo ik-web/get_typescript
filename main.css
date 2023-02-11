@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.page {
+  font-family: sans-serif;
+}
+
+.page__container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 100vh;
+}
+
+.page__title {
+  margin: 24px 0;
+  text-align: center;
+  color: royalblue;
+}
+
+.page__list {
+  padding: 16px;
+
+  border-top: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  border-radius: 4px 4px 0 0;
+}
+
+.newItemForm {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  padding: 40px 40px 60px;
+  background: lightgrey;
+}
+
+.newItemForm__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.newItemForm__item {
+  width: 100%;
+  height: 40px;
+  padding: 0 8px;
+  font-size: 16px;
+  box-shadow: 0 0 0 1px gray;
+}
+
+.newItemForm__item,
+.newItemForm__button {
+  border-radius: 4px;
+  border: none;
+}
+
+.newItemForm__typeOption {
+  font-size: 16px;
+}
+
+.newItemForm__button {
+  align-self: end;
+  width: 160px;
+  height: 40px;
+
+  color: white;
+
+  background: royalblue;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  transition: background 0.15s linear;
+}
+
+.newItemForm__button:focus,
+.newItemForm__button:hover {
+  background: blue;
+}

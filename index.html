@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Finance logger</title>
+  </head>
+  <body>
+    <div class="page__container">
+      <div>
+        <h1 class="page__title">Finance logger</h1>
+      </div>
+
+      <div class="page__list">
+        <ul class="list" id="list"></ul>
+      </div>
+
+      <div class="page__form">
+        <form class="newItemForm" id="newItemForm">
+          <div class="newItemForm__field">
+            <label>Type</label>
+            <select id="type" class="newItemForm__item">
+              <option value="" class="newItemForm__typeOption">Invoice</option>
+              <option value="" class="newItemForm__typeOption">Payment</option>
+            </select>
+          </div>
+
+          <div class="newItemForm__field">
+            <label for="">To/From</label>
+            <input
+              type="text"
+              id="toFrom"
+              value=""
+              class="newItemForm__item"
+            />
+          </div>
+
+          <div class="newItemForm__field">
+            <label>Details</label>
+            <input
+              type="text"
+              id="details"
+              class="newItemForm__item"
+            />
+          </div>
+
+          <div class="newItemForm__field">
+            <label>Amount ($):</label>
+            <input
+              type="number"
+              id="amount"
+              class="newItemForm__item"
+            />
+          </div>
+
+          <button
+            id="newItemFormButton"
+            class="newItemForm__button"
+            type="submit"
+          >Add</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
